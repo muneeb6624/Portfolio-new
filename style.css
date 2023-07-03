@@ -20,17 +20,25 @@ body {
   }
   
   /* Header */
+  /***************** NAVIGATION BAR ***************/
   header {
-    background-color: #fffbfb;
+    background-color:#1f2024;
   }
   
   .navbar {
     padding: 10px 0;
+    height: 150px;
   }
 
-  .navlink{
+  
+  .nav-link{
+    color: white;
+    margin-right: 20px;
     display: inline-block;
+    font-size: 20px;
+    flex: center;
   }
+  
 
   .navbar-brand{
     font-family: 'Times New Roman', Times, serif;
@@ -49,6 +57,84 @@ body {
     margin-bottom: 5px;
     position: relative;
   }
+
+    
+  #navbarSupportedContent{
+    margin-left: 25px;
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .nav-item{    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-size: 20px;
+  }
+
+
+#navbox{
+    background-color: #25262a;
+    width: 100%;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.contactbutton {
+    color: black; 
+    font-size: 21px;
+    background-color: #ffb227;
+    float: right;
+    position: absolute;
+    right: 70px;
+    top: 50px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#contactme-inWorkTogether{
+  position: relative;
+  display: contents;
+  align-self: center;
+}
+
+#contactme-inIntro{
+  position: relative;
+  display: contents;
+  align-self: center;
+}
+
+.contactbutton:hover {
+    background-color: rgb(255, 153, 0);
+  }
+  
+  
+ .btn{
+  background-color: #ffb227;
+  color: black;
+  font-weight: 3px;
+  border-radius: 10px;
+  height: 50px;
+  width: 150px;
+  padding: 7px;
+  border: none;
+}
+.btn:hover{
+  background-color: rgb(255,153,0);
+  color: #1a1a1a;
+}
+  /* .navbar-nav .nav-item .nav-link :hover{
+    text-decoration: underline;
+    font-weight: bold;
+    color: aliceblue;
+   
+  } */
+  .nav-item :hover{
+    text-decoration: dashed whitesmoke !important;
+    color: aliceblue;
+    font-weight: bold;
+  }
+
+
+
   
   /* Hero Section */
   .hero {
@@ -74,18 +160,25 @@ body {
     background-color: #1f1f1f;
     width: 250px;
     height: 260px;
-    text-align: center;
+    text-align: center ;
     color: white;
     display:inline-block;
     border-radius: 20%;
     padding: 20px;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  
+ 
+}
+  .box:hover{
+    /* background-color: linear-gradient(); */
+    background: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);
+
+    color: azure;
+    box-shadow: 2px 6px 40px rgba(122,220,180);
+    
   }
 
-  .box:hover{
-    background-color: rgb(148, 233, 148);
-    color: azure;
-  }
+  
   
   #productbox{
     margin-left: 25px;
@@ -119,63 +212,11 @@ body {
     background-color: #2d2e32;
     padding: 50px 0;
   }
-  
-  #navbarSupportedContent{
-    margin-left: 25px;
-    font-size: 25px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  .nav-item{
-    
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-  }
-
-  .nav-link{
-    color: white;
-    margin-right: 20px;
-  }
-
-#navbox{
-    background-color: #25262a;
-    width: 100%;
-    font-weight: 100;
-    text-decoration: none;
-}
-
-.contactbutton {
-    color: black;
-    background-color: #ffb227;
-    float: right;
-    position: absolute;
-    right: 70px;
-    top: 30px;
-    border-radius: 30px;
-    height: 50px;
-    width: 150px;
-    transition: background-color 0.5s ease-in-out, color 0.3s ease-in-out;
-}
-
-
-.contactbutton:hover {
-    background-color: orange;
-    color: white;
-    border-radius: 30px;
-    height: 50px;
-    width: 150px;
-  }  
-
-  .navbar-nav .nav-item.active .nav-link {
-    text-decoration: underline;
-    font-weight: bold;
-  }
-
-
   #heroimg{
     display: inline;
     position: absolute;
     right: 10px;
-    top: 20%;
+    top: 25%;
   }
 
   #herocontent{
@@ -190,15 +231,6 @@ body {
 
  }
 
- .btn{
-    background-color: #ffb227;
-    color: black;
-    font-weight: 2px;
-    font-size: 23px;
-    height: 50px;
-    width: 2in;
-    padding: 7px;
- }
 
  .hire{
     width: 40%;
@@ -223,14 +255,16 @@ body {
  .portfolio-img{
     border-radius: 20%;
     margin-right: 20px;
-    position: relative;
+    /*position: relative;
+    display: inline-flex;
+    float: right;*/
  }
 
  .portfolio-img-box{
   position: relative;
   width: fit-content;
   display: inline;
-  margin-left: 120%;
+  left: 500px;
   
  }
 
@@ -242,12 +276,7 @@ body {
  }
 
 
-#contactme2{
-  position: relative;
-  float: none;
-  transition: none;
-  margin-left: 120px;
-}
+
 
 .showmore{
   height: 50px;
@@ -346,6 +375,48 @@ label{
   margin-right: 10px;
   margin-bottom: 20px;
 }
+
+
+/********* Form*********/
+.input-group{
+  display: inline-flex;
+  justify-content: space-between;
+
+
+}
+
+.form-control{
+  border-color: #4db983;
+  border-width: 1px;
+  background-color:#1a1a1a;
+  color: white;
+
+  
+}
+
+.form-control::placeholder{
+  color: whitesmoke;
+  
+}
+
+
+.Message{
+  width: 500px;
+  height: 17rem;
+  border-radius: 2rem;
+  border-width: 1px;
+  align-self: flex-start;
+  align-items: flex-start;
+  color: whitesmoke;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+
 
 /*** ANIMATION  ***/
 
