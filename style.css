@@ -408,6 +408,7 @@ label{
   align-self: flex-start;
   align-items: flex-start;
   color: whitesmoke;
+  background-color: #1f1f1f;
 }
 
 .navbar-nav .nav-item.active .nav-link {
